@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <center>
+           <img src="../Assets/images/happy.jfif" alt="" height="100px" width="100px">
+         <font size="30px" color="green">Friends Corner</font> 
+        </center>
+    </header>
+    <hr color="red" size="5px">
+    <nav>
+       <a href="https://amazon.com" target="_blank">Amazon</a>|
+       <a href="https://flipkart.com" target="_blank">Flipkart</a> |
+       <a href="./greet.html" target="_blank">Greet</a>|
+       <a href="./iframe.html" target="_blank">Iframe</a>|
+       <a href="./list.htm" target="_blank">List</a>|
+       <a href="./form.html" target="_blank">Form</a>|
+       <a href="./Products.html" target="_blank">Products</a>|
+    </nav>
+     <hr color="red" size="5px">
+    <form>
+        <label for="first">Enter your fullName</label> <br>
+        <input type="text" name="fname" id="first" placeholder="enter your fullname" minlength="2" maxlength="20" pattern="^[a-zA-Z ]{2,20}$" required> <br>
+         
+        <label for="second">Enter Your Password</label> <br>
+        <input type="password" name="pass" id="second" required><br>
+
+         <label for="thired">Enter Your Email</label> <br>
+         <input type="email" name="myemail" id="thired" required><br>
+        
+          <label for="fourth">Enter Your DOB</label> <br>
+          <input type="date" name="dob" id="fourth" required><br>
+          <!-- use of radio button  -->
+        <label for="">Select Your Gender:</label><br>
+        <input type="radio" name="gender" value="male" checked>Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="transgender">Transgender<br>
+          <!-- use of checkbox  -->
+        <label for="">Select Your Qualification:</label><br>
+        <input type="checkbox" name="edu" value="ssc">SSC
+        <input type="checkbox" name="edu" value="hsc">HSC
+        <input type="checkbox" name="edu" value="ug">UG
+        <input type="checkbox" name="edu" value="pg">PG <br>
+        <!-- use of select tag for droupdown -->
+        <label for="">Select Your Course:</label>
+        <select name="courses" id="" multiple>
+            <option value="java">Java</option>
+            <option value="React">React</option>
+            <option value="Python">Python</option>
+            <option value="Angular">Angular</option>
+        </select> <br>
+        <label for="">Course Fees:</label>
+        <input type="text" name="fees" value="10000" disabled readonly> <br>
+
+        <fieldset>
+        <legend>Account Details</legend>
+         <label for="">Account Holder Name:</label>
+         <input type="text" name="accname"><br>
+         <label for="">Account Number:</label>
+         <input type="text" name="accno"><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+
+</body>
+</html>

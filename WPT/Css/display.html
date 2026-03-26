@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img1 {
+            border: 2px solid red;
+        }
+
+        .img1:hover {
+            display: none;
+        }
+
+        .parent {
+            border: 3px solid red;
+            width: 290px;
+            text-align: center;
+            background-color: lightcyan;
+            font-size: 30px;
+        }
+
+        .child {
+            border: 2px solid green;
+            margin: 8px;
+            background: black;
+            color: wheat;
+            display: none;
+        }
+        .parent:hover .child{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img class="img1" src="../Assets/images/dosa.jpg" alt="">
+
+    <div class="parent">
+        Parent
+        <div class="child">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi soluta sit iusto. Atque velit in totam
+            cumque? At error facere voluptate inventore maxime
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

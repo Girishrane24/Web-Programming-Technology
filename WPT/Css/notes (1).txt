@@ -1,0 +1,41 @@
+
+23/3/26
+
+
+CSS: 
+-it is use to design webapp and make it responsive.
+-Css stand Cascading Style Sheet.
+-latest version of css is CSS-3
+
+Q.What are types of css.
+*there are three ways to use to css 
+
+1.inline css: in starting tag we use style attribute with property and value.
+2.internal css: in html file we use style tag and in that we write css code;
+  syntax: selector{
+      property:value;
+   }
+
+3.external css: we create a seperate css file with extension filename.css and import it in html file by using link tag. 
+
+ syntax: selector{
+      property:value;
+   }
+
+   *Selector in Css :
+   1.Element name selector:
+   2.Group selector :
+   3.Id selector (#):
+   4.Class selector(.) :
+   5.Universal Selector(*) :
+
+
+Box Model:
+1.content: it can be any text or image
+2.padding: it is use to clear area between content and Element border 
+3.bordre: it is a line drown around an Element.
+4.margine: it is use to clear area around Element border.
+
+
+*display: none; : Element will be hide and its space will occupied by adjesent Element
+*visibility: hidden;Element will be hide and its space will nooccupied by adjesent Element

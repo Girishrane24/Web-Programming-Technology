@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <textarea name="" id=""></textarea>
+    <button>Same As Temprary Address</button>
+    <textarea name="" id=""></textarea>
+    <script>
+        //object data
+        let emp = {
+            id: 101,
+            name: "Aditya",
+            salary: 95000,
+            post: "Manager",
+            single: true,
+            address: {
+                city: "Pune", state: "Maharashtra", pin: 1234
+            }
+        };
+
+        document.write("Id:" + emp.id + " Name:" + emp.name + " Salary:" + emp.salary + " Post:" + emp.post + "<br>");
+
+        //use of template leteral 
+        document.write(`Id:${emp.id} Name:${emp.name} Salary:${emp.salary} Post:${emp.post} <br>`);
+
+        document.write(`City:${emp.address.city}, State:${emp.address.state} Pin:${emp.address.pin}  <br>`);
+
+        let std = [
+            { id: 1, name: "Rahul", gender: "Male" },
+            { id: 2, name: "Azim", gender: "Male" },
+            { id: 3, name: "Swayam", gender: "Male" },
+        ]
+        //   document.write(`Id:${std[0].id} Name:${std[0].name} Gender:${std[0].gender}<br>`);
+        for (let i = 0; i < std.length; i++) {
+            document.write(`Id:${std[i].id} Name:${std[i].name} Gender:${std[i].gender}<br>`);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: aqua;
+            border-bottom: 5px solid blue;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            justify-content: center;
+        }
+
+        .logo {
+            height: 100px;
+            width: 100px;
+            border: 3px solid red;
+            border-radius: 50%;
+            margin-right: 11px;
+        }
+
+        .title {
+            font-size: 60px;
+            font-weight: 700;
+            text-shadow: 6px 2px 3px yellow;
+        }
+
+        div {
+            border: 2px solid green;
+            font-size: 25px;
+            width: 16.66%;
+            height: 150px;
+            text-align: center;
+            background-color: chartreuse;
+            float: left;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width:992px) {
+            div {
+                width: 25%;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            div {
+                width: 33.33%;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            div {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:576px) {
+            header {
+                background-color: rgb(255, 77, 0);
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            div {
+                width: 100%;
+            }
+
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../Assets/images/samosa.jpg" alt="samosa">
+        <p class="title">Friends Corner</p>
+    </header>
+
+    <div>div-1</div>
+    <div>div-2</div>
+    <div>div-3</div>
+    <div>div-4</div>
+    <div>div-5</div>
+    <div>div-6</div>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+22/3/26
+
+HTML:
+-it is use to create structure pf websit or webapp.
+-it is use to display datato user on browser.
+-it stand for Hyper text markup language.
+-latest version of html is html5.
+
+
+-it is tag basis language 
+<tag>
+-in html there are two types of tags
+1.paired tag: <starTag></endTag>
+2.unpaired tag: <singletag> 
+
+-to create webpage file extension must be .html or   .htm 
+-in html page we write everything inside tag.
+
+<!DOCTYPE html> : it tels to search engin it is HTML type of document belong to version 5. 
+
+Head part : it contain external link and meta data in it.
+Body part: it is use to display data on browser.
+
+
+*Element in HTML 
+<StatingTag attribute="value"> content </EndingTag>
+
+In html there are two types of Element
+1.Block element:-the element which takes 100% width of its screen
+                -it always start on new line.
+                -ex: h1-h2,div,table,form,list
+
+2.Inline Element:-the element which takes required width of its content.
+-it will never start on new line 
+-ex: b,i,img,a,
+
+*Attribute : 
+-it provide additional information about tag. 
+-it always write in starting tag. 
+-it write as key and value paire format 
+
+
+*In html there three types of list 
+1.Ordered List (ol): type: number, A,B,C,a,b,c,I,II,III,i,ii,iii
+2.Unordered list (ul): types : disc,square,circle,non 
+3.Description List (dl): 
+dl: description List
+dt:Define Term
+dd: define description 
+
+*how to insert images 
+*how to insert multimedia file
+
+*iframe:it create small window on screen 
+-iframe tag is use to insert google map location.
+-it is use to insert youtube video 
+-it is use to insert one website into another website. 
+
+*Symantic element: the element which has specific meaning
+                  -ex: header, footer,section,aside,nav 
+
+
+* How to create link 
+-by using anchore tag we can create link in html 
+
+
+Q.What is difference between html and html5 
+Q.What are the features of html5 
+
+*Symantic element introduce: the element which has specific meaning. ex:header,footer,section,aside,nav
+*New Tag ,New Attribute and new input type Introduce:
+*multimedia element introduce: video and audio file 
+*HTML API introduce:
+ 1.geolocation: it return user current position. to use it , gps must intall in your system.
+ 2.Drag and Drop: grabbing an object and paste into another place.
+ 3.Web-Worker: it is small javascript code which execute at backend of browser without affecting its current execution.
+ 4.Web-Storage: it is use to store user data on browser.
+    -local storage: it store user data permanantly.
+    -session storage: it store user data for limited time.
+ 5.SSE(Server Sent Event): it allows us to get automatic update from server.
+
+*Special code and symbol 
+
+*Table: it is rows and columan 
+-in html table first we create row and then then columan.
+
+*Table with colspan and rowspan 
+*Bookmark Concept 
+Task: create nested list as shown in image 
+Task: create image as link task for 5 images  
+Task: create two table with colspan and rowspan as shown in file.
+Task: create 10 chapter and link to redirect to top 
+
+============================================================
+23/3/26
+
+*form: it is use to get data or information form user.
+there are two metho to submit forms data. 
+
+*get method : 
+ -this method is use to submit user data which is not confidential.
+ -submited data will be vissible in browser url.
+ -browser url has character limitation that is 2048 chapter only
+
+*post method:
+-when we have to submit user confidential data.
+-submited data will not be vissible.
+-it store data in req.body object.
+
+
+label: it gives hit to user what data need to insert into input box.
+input control: it allows us to enter data in it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

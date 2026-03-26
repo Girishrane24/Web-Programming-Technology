@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        // simple function 
+        function greeting() {
+            return "Good Morning Friends";
+        }
+        //  greeting();
+        console.log(greeting());
+        // parametrise function 
+        function sum(num1, num2) {
+            return num1 + num1;
+        }
+        console.log("Addition:", sum(10, 20));
+        //3.anonymous function: function which haas no name.
+        let mul = function (num1, num2) {
+            return num1 * num2;
+        };
+        console.log("multiplication:", mul(50, 2));
+        //4.arrow function : function with no name and no function keyword.
+        // let div = (num1,num2)=>{
+        //         return num1/num2;
+        //     };
+
+        let div = (num1, num2) => num1 / num2;
+        console.log("Division:", div(50, 2));
+
+        //6.optional parametrize function: this is no need to pass parameter value,optional parameter always write at last.
+        let fullName = (fname, lname, mname = "") => {
+            return fname + mname + lname;
+        }
+        console.log(fullName("Panchashil", " Wankhede"));
+        console.log(fullName("Panchashil", " Wankhede", " M. "));
+
+        //7.rest parametrize function: when we don't know how many parameters are required in function, in this we use spread operator(...);
+        let stdList = (...std) => {
+            return std;
+        };
+        console.log(stdList("Aaditya", "Sarang", "Rahul", "Sahil", "Sachin", "Rohit"));
+        
+    </script>
+
+
+
+</body>
+
+</html>

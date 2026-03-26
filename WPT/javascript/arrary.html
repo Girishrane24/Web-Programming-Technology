@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let city = ["Pune", "Mumbai", "Nagpur", "Nashik", "Amravati"];
+        console.log(city);
+        // how to calculat array length 
+        let arrLength = city.length;
+        console.log(arrLength);
+        // how to calculate size 
+        let arrSize = city.length - 1;
+        console.log(arrSize);
+        // How to access array data outside array 
+        let myCity = city[2];
+        console.log(myCity);
+        //how to update array data 
+        city[3] = "NASHIK";
+        console.log(city);
+        // array method
+        // 1. push (): it insert values at last index of an array
+        city.push("Chandrapur", "Wardha");
+        console.log(city);
+        //2.pop(): it remove values from last index of an array.
+        city.pop();
+        console.log(city);
+        //3.unshift():it insert values at starting index of an array
+        city.unshift("Baramathi", "Satara");
+        console.log(city);
+        //4.shift(): it remove values at starting index of an array
+        city.shift();
+        console.log(city);
+        //5.splice(startIndex,deleteCount,InsertValues): it allows us to insert and remove values from middle index of an array.
+        city.splice(3, 0, "Sangali", "Kolhapur"); // insert value
+        console.log(city);
+        city.splice(2, 3);
+        console.log(city);  // remove values
+        city.splice(2, 1, "Jalgaon", "Dhule", "Nandubar");
+        console.log(city);
+        //6.toString(): it convert array data into string data type
+        let str1 = city.toString();
+        console.log(str1);
+        //7.join(seperator): it convert array data into string data type,having one parameter to seperate string values.
+        let str2 = city.join();
+        console.log(str2);
+        let str3 = city.join("*");
+        console.log(str3);
+        let str4 = city.join(" ");
+        console.log(str4);
+        // display array values using for loop
+        for (let i = 0; i < city.length; i++) {
+            document.write(city[i] + ",");
+        }
+        document.write("<br>");
+        // for of : it return array values;
+        for (let c of city) {
+            document.write(c + ",");
+        }
+        document.write("<br>");
+        // for in : it return array index;
+        for (let c in city) {
+            document.write(c + ",");
+        }
+    </script>
+</body>
+
+</html>
