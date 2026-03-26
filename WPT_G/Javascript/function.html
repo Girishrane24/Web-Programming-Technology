@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        // simple function
+        function greeting() {
+            return "Good Afternoon";
+        }
+
+        console.log(greeting());
+
+        // Parameterise function
+        function sum(num1,num2) 
+        {
+            return num1 + num2;
+        }
+        console.log("addtion : ", sum(1,2));
+
+        // anonymous function : function which has no name
+        let mul = function(num1,num2){
+            return num1*num2;
+        };
+        console.log("multiplication : " , mul(50,2));
+
+        // Arrow function  : function with not name and keyword
+        let div = (num1,num2)=> {
+            return num1 / num2;
+
+        }
+        console.log("Division : ",div(10,20));
+
+        // optional parameterize function : this is no need to pass parameter value
+        let fullName = (fname,lname,mname="") => {
+            return fname + mname + lname; 
+        }
+        console.log(fullName("Girish","Rane"));
+        console.log(fullName("Girish","Rane","Lumdeo"));
+
+        // Rest Parameterize function : when we don't know how many parameters available
+        let stdList = (...std) => {
+            return std;
+            
+        };
+        console.log(stdList("firstname","secondname","thirdname"));
+
+
+
+    </script>
+</body>
+</html>
