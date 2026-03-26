@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <center>
+            <img src="E:/WPT/Assets/images/happy.jfif" alt=""></tr>
+            <font size="30px" color="green">Friends corner</font>
+        </center>
+    </header>
+    <hr color="red" size = "10px">
+    <nav>
+        <a href="https://amazon.com" target="_blank">Amazon</a> | 
+        <a href="https://flipkart.com" target="_blank">Flipcart</a> | 
+        <a href="E:/WPT/html/greet.html" target="_blank">Greet</a> | 
+        <a href="E:/WPT/html/Iframe.html" target="_blank">Iframe</a> | 
+        <a href="E:/WPT/html/list.html" target="_blank">List</a> | 
+        <a href="E:/WPT/html/form.html" target="_blank">Form</a> | 
+        <a href="E:/WPT/html/Products.html" target="_blank">Products</a> | 
+    </nav>
+
+    <form action="">
+        <label for="first">Enter your Full name</label> <br>
+        <input type="text" name="fname" id="first" placeholder="Enter your name" pattern="^[a-zA-Z ]{2,20}$" minlength="2" maxlength="20" required>
+        <br>
+        <label for="second">Enter your Password</label> <br>
+        <input type="password" name="password" id="second" placeholder="Enter your password" required>
+        <br>
+        <label for="third">Enter your Email</label> <br>
+        <input type="email" name="Email" id="third" required>
+        <br>
+        <label for="fourth">Enter yout DOB</label> <br>
+        <input type="date" id="DOB" name="DOB">
+
+        <br>
+        <!--use of radio button-->
+        <label for="">Select your Gender:</label> <br>
+        <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="Female" > Female
+        <input type="radio" name="gender" value="transgender"> transgender
+        
+        <br>
+        <!--Use of check box-->
+        <label for=""> Select your qualification</label> <br>
+        <input type="checkbox" name="edu" value="ssc">SSC
+        <input type="checkbox" name="edu" value="ssc">HSC
+        <input type="checkbox" name="edu" value="ssc">UG
+        <input type="checkbox" name="edu" value="ssc">PG <br>
+        
+        <br>
+        <!--use if sekect tag for dropdown-->
+        <label for="">select your courses:</label>
+        <label for="">Select Your Course:</label>
+        <select name="courses" id="" multiple>
+            <option value="java">Java</option>
+            <option value="React">React</option>
+            <option value="Python">Python</option>
+            <option value="Angular">Angular</option>
+        </select> <br>
+        <label for="">Course Fees:</label>
+        <input type="text" name="fees" value="10000" disabled readonly> <br>
+        
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="">Account Holder name:</label>
+            <input type="text" name="accname" placeholder="Account Holder name"> <br>
+            <label for="">Account Number:</label>
+            <input type="text" name="accno" placeholder="Account Number">
+        </fieldset>
+        
+        <br>
+        <button type="submit">submit</button>
+        <button type="Reset">Reset</button>
+    </form>
+
+
+
+</body>
+</html>
