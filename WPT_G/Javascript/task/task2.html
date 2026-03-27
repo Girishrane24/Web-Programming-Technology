@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .mainimage{
+          
+           width: 250px;
+           height: 150px; 
+           
+        }
+        .divBig{
+            align-items: center;
+            padding-left: 500px;
+            padding-top: 30px;
+        }
+        .LabelNameClass{
+            padding-left: 80px;
+        }
+        .samosaButton{
+            text-align: center;
+        }
+        
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="divBig">
+     <!-- main image   -->
+    <img src="" id = "imageID" alt="" class="mainimage"> 
+
+    <!-- Add name to image -->
+    <h1 id = "labelName" class="LabelNameClass"> </h1>
+
+    <!-- Add button  -->
+    <button id = "samosaID" class="samosaButton" onclick="Button()">
+        Click Here
+    </button>
+
+   
+
+    </div>
+    <script>
+        let count = 1;
+        function Button() {
+            if (count === 1){
+
+            
+            document.getElementById("imageID").src="C:/Users/Group056/Desktop/CDAC_infoway/WPT_G/images/samosa.jpg";
+            document.getElementById("labelName").innerHTML = "Samosa";
+            count = 0;
+            }
+            else {
+            document.getElementById("imageID").src="C:/Users/Group056/Desktop/CDAC_infoway/WPT_G/images/kachori.jpg";
+            document.getElementById("labelName").innerHTML = "kachori";
+            count = 1;
+            }
+        }
+
+
+    </script>
+</body>
+</html>

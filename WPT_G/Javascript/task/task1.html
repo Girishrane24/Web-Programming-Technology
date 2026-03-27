@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .mainimage{
+          
+           width: 250px;
+           height: 150px; 
+           
+        }
+        .divBig{
+            align-items: center;
+            padding-left: 500px;
+            padding-top: 30px;
+        }
+        .LabelNameClass{
+            padding-left: 80px;
+        }
+        
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="divBig">
+     <!-- main image   -->
+    <img src="" id = "imageID" alt="" class="mainimage"> 
+
+    <!-- Add name to image -->
+    <h1 id = "labelName" class="LabelNameClass"> </h1>
+
+    <!-- Add button  -->
+    <button id = "samosaID" class="samosaButton" onclick="Samosa()">
+        samosa
+    </button>
+
+    <button id = "pohaID" class="Poha" onclick="Poha()">
+        Poha
+    </button>
+
+    <button id = "upamaID" class="upama" onclick="upama()">
+        upama
+    </button>
+
+    <button id = "idaliID" class="idali" onclick="idali()">
+        idali
+    </button>
+
+    <button id = "kachoriID" class="kachori" onclick="kachori()">
+        kachori
+    </button>
+
+    </div>
+    <script>
+        function Samosa() {
+            document.getElementById("imageID").src="C:/Users/Group056/Desktop/CDAC_infoway/WPT_G/images/samosa.jpg";
+            document.getElementById("labelName").innerHTML = "Samosa";
+        }
+
+        function Poha() {
+            document.getElementById("imageID").src="C:/Users/Group056/Desktop/CDAC_infoway/WPT_G/images/poha.jpg";
+            document.getElementById("labelName").innerHTML = "Poha";
+        }
+        function upama() {
+            document.getElementById("imageID").src="C:/Users/Group056/Desktop/CDAC_infoway/WPT_G/images/upama.jpg";
+            document.getElementById("labelName").innerHTML = "upama";
+        }
+        function idali() {
+            document.getElementById("imageID").src="C:/Users/Group056/Desktop/CDAC_infoway/WPT_G/images/idali.jpg";
+            document.getElementById("labelName").innerHTML = "idali";
+        }
+        function kachori() {
+            document.getElementById("imageID").src="C:/Users/Group056/Desktop/CDAC_infoway/WPT_G/images/kachori.jpg";
+            document.getElementById("labelName").innerHTML = "kachori";
+        }
+
+    </script>
+</body>
+</html>

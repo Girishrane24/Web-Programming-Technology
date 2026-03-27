@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <style>
+        #d1{
+            border: 3px solid red;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: auto;
+            text-align: center;
+            
+        }
+     </style>
+</head>
+<body>
+    
+    <div id="d1">
+        hi
+    </div>
+    <script>
+        $(document).ready(function (){
+           $("#d1").on({click:function (){
+            $(this).css({"background-color":"red"})
+           },dbclick:function (){
+            $(this).css({"background-color":"green"})
+           }});
+           
+           
+        //    $("#d1").on({hover:css({"backgroundColor":"red"}),click:css({"backgroundColor":"green"})}) 
+        // $("#d1").click
+        })
+    </script>
+</body>
+</html>

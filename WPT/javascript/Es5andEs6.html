@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //ES5 
+
+        let std = ["Sham", "Radha", "Rahul", "Gopal", "Gita"];
+        //1.forEach():it call another method once for each array element.
+        std.forEach((val, index) => {
+            document.write(val + ",");
+        });
+        document.write("<br>");
+        let num = [1, 2, 4, 5, 7, 9, 10, 14, 15, 18, 20, 22, 24, 25, 26];
+        document.write(num, "<br>");
+        //2.map():it call another method once for each array element and return new array after performing manipulation with array.
+        let mapOut = num.map((val, index) => {
+            return val * 2;
+        });
+        document.write(mapOut, "<br>");
+        //3.filter:it call another method once for each array element and return array values who satisfy given condition.
+        let evernNo = num.filter((val, index) => {
+            return val % 2 == 0;
+        });
+        document.write(evernNo, "<br>");
+        //4.every():it call another method once for each array element and return true value if all array element satisfy given condition.
+        let everyOut = num.every((val, index) => {
+            return val > 1;
+        });
+        document.write(everyOut, "<br>");
+        //5.some():it call another method once for each array element and return true value if some array element satisfy given condition.
+        let somOut = num.some((val, index) => {
+            return val > 1;
+        });
+        document.write(somOut, "<br>");
+
+        //6.reduce/reduceRight(): it return array result as single value,it takes two paramter, previous and next
+        let reduceOut = num.reduce((prev, next) => {
+            return prev + next;
+        });
+        document.write(reduceOut, "<br>");
+
+
+        // ES6
+        //   var name;
+        //   name = "Panchashil";
+        //  console.log(name);
+        //   var name;
+
+        // use of let keyword
+        let friendName = "Kshitij";
+        console.log(friendName);
+        // use of contant variable.
+        const pi = 3.14;
+    </script>
+</body>
+
+</html>

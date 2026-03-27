@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+    <div id="d11"></div>
+    <div id="d12"></div>
+    <div id="d13"></div>
+    <div id="d14"></div>
+    <div id="d15"></div>
+    <div id="d16"></div>
+    <div id="d17"></div>
+    <div id="d18"></div>
+    <div id="d19"></div>
+    <div id="d20"></div>
+    <div id="d21"></div>
+    <div id="d22"></div>
+
+<script>
+
+    let msg = "You All are bright students. You students are future of india.";
+    document.getElementById("d1").innerHTML=msg;
+    document.getElementById("d2").innerHTML=msg.length;
+    document.getElementById("d3").innerHTML=msg.toUpperCase();
+    document.getElementById("d4").innerHTML=msg.toLowerCase();
+    // 1.indeOf(searchingString,startIndex):
+   document.getElementById("d5").innerHTML=msg.indexOf("students");
+   document.getElementById("d6").innerHTML=msg.indexOf("students",22);
+// 2.lastIndex(searchingString,startIndex):
+document.getElementById("d7").innerHTML=msg.lastIndexOf("You");
+document.getElementById("d8").innerHTML=msg.lastIndexOf("You",26);
+// 3.search(searchingString)
+document.getElementById("d9").innerHTML=msg.search("are");
+
+// 4.slice(startIndex,endIndex):
+document.getElementById("d10").innerHTML=msg.slice(10);
+document.getElementById("d11").innerHTML=msg.slice(10,30);
+document.getElementById("d12").innerHTML=msg.slice(-20);
+document.getElementById("d13").innerHTML=msg.slice(-20,-5);
+
+// 5.subString(startIndexendIndex):
+document.getElementById("d14").innerHTML=msg.substring(15);
+document.getElementById("d15").innerHTML=msg.substring(15,25);
+
+// 6.subStr(startIndex,totalnumberofCharacter):
+document.getElementById("d16").innerHTML=msg.substr(10,5);
+// charAt()
+document.getElementById("d17").innerHTML=msg.charAt(5);
+//replace()
+document.getElementById("d18").innerHTML=msg.replace("students","Employees");
+document.getElementById("d19").innerHTML=msg.replace(/students/g,"Employees");
+document.getElementById("d20").innerHTML=msg.replace(/Students/ig,"Employees");
+document.getElementById("d21").innerHTML=msg.replaceAll("students","Employees");
+// split(seperator): it convert string data into array
+console.log(msg.split());
+console.log(msg.split(" "));
+
+</script>
+</body>
+</html>

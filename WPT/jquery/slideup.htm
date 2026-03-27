@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        p{
+            border: 5px solid red;
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" id="d1">SlideUp</button>
+    <button type="button" id="d2">SlidDown</button>
+    <button type="button" id="d3">SlidToggle</button><br>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et illo optio quidem quod, sapiente quas aperiam
+        laboriosam obcaecati, dolor, est nam consequuntur ullam explicabo debitis doloribus magni facilis iure! Sunt
+        obcaecati placeat ad veritatis exercitationem at eveniet et repellat corporis ducimus necessitatibus nisi
+        delectus animi vero quia minus suscipit doloribus cum minima quod ab, similique ratione cupiditate? Explicabo
+        odit ullam culpa quibusdam. Perspiciatis ipsum eum ad dolore blanditiis dolor dolores cumque veniam quaerat cum,
+        esse sequi aliquam odio distinctio totam obcaecati nobis maxime doloremque quae soluta consequuntur! Dolore
+        exercitationem harum omnis modi dolores? Distinctio, quae impedit ex sit eos at?
+    </p>
+
+    <script>
+        $(document).ready(function(){
+          $("#d1").click(()=>{
+            $('p').slideUp(1000);
+          });
+          $("#d2").click(()=>{
+            $('p').slideDown(1000);
+          })
+        })
+    </script>
+</body>
+
+</html>

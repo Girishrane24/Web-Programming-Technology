@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+
+    <script>
+        // create object of date class
+        let dobj = new Date();
+        document.getElementById("d1").innerHTML = dobj;
+        document.getElementById("d2").innerHTML = dobj.getFullYear();
+        document.getElementById("d3").innerHTML = dobj.getDate();
+        document.getElementById("d4").innerHTML = dobj.getHours
+            ();
+        document.getElementById("d6").innerHTML = dobj.getDay();
+        let today = dobj.getDay();
+        switch (today) {
+            case 0: {
+                document.getElementById("d5").innerHTML = "Today is Subnday";
+                break;
+            }
+            case 1: {
+                document.getElementById("d5").innerHTML = "Today is Monday";
+                break;
+            }
+            case 2: {
+                document.getElementById("d5").innerHTML = "Today is Tuesday";
+                break;
+            }
+            case 3: {
+                document.getElementById("d5").innerHTML = "Today is Wednesday";
+                break;
+            }
+            case 4: {
+                document.getElementById("d5").innerHTML = "Today is Thursday";
+                break;
+            }
+            case 5: {
+                document.getElementById("d5").innerHTML = "Today is Friday";
+                break;
+            }
+            case 6: {
+                document.getElementById("d5").innerHTML = "Today is Saturday";
+                break;
+            }
+            default: {
+                document.getElementById("d5").innerHTML = "invalid Choice";
+                break;
+            }
+        }
+
+
+        document.getElementById("d7").innerHTML = dobj.getMonth();
+        //    how to set date and time 
+        let dateObj = new Date("2015", "01", "05", "10", "35", "20");
+        document.getElementById("d8").innerHTML = dateObj;
+
+        // use of settimeout method
+        function greet() {
+            window.alert("Good Morning Friends.");
+        }
+        //    greet();
+        //  setTimeout(greet,3000);
+        // use of setInterval method
+        // setInterval(greet, 2000);
+        
+        const myClok = ()=>{
+            let dObj=new Date();
+            document.getElementById("d10").innerHTML = dObj.toLocaleTimeString();
+        }
+        // myClok();
+        setInterval(myClok,1000);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <button type="button" id="d1">Hide Image</button> 
+    <button type="button" id="d2">Show Image</button><br><br>
+    <img id="img1" src="../Assets/images/dosa.jpg" alt="">
+    <hr>
+    <img class="img2" src="../Assets/images/samosa.jpg" alt="">
+    <img class="img3" src="../Assets/images/sad.jfif" alt="">
+
+
+
+    <script>
+      $(document).ready(function (){
+            // click and hide & show 
+        $("#d1").click(()=>{
+           $("#img1").hide(1000); 
+        });
+        $("#d2").click(()=>{
+            $("#img1").show(1000);
+        });
+        //    dbclick and Hide 
+        $(".img2").dblclick(function(){
+            $(this).hide(2000);
+        });
+        // hover and css 
+        $(".img3").hover(function(){
+            $(this).css({"border":"2px solid red","borderRadius":"50%","height":"200px","width":"200px"});
+        })
+      });
+    </script>
+</body>
+</html>

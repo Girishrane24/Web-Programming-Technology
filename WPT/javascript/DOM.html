@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+<div id="parent">
+    <p id="p1">para-1</p>
+</div>
+ 
+<ul id="d1">
+   
+</ul>
+<button type="button" onclick="generateList()">generate list</button>
+<script>
+      let breakfast = ["Samosa","Dosa","Idali","Vada","Chatani"];
+ 
+   const generateList = ()=>{
+    let parentUl = document.getElementById("d1");
+     for(let i=0;i<breakfast.length;i++){
+         let newLi = document.createElement("li");
+         newLi.innerText = breakfast[i];
+         parentUl.appendChild(newLi);
+     }
+   }
+
+    // find element by id  
+     let parentDiv = document.getElementById("parent");
+    // // how to create new Element 
+     let newPara = document.createElement("p"); 
+     console.log(newPara);
+     //how to add attribute and value
+     newPara.setAttribute("id","p1")
+    // how to insert data or information inside element
+    newPara.innerText="this is new para";
+    // // add new element inside parent element 
+    parentDiv.appendChild(newPara);
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+27/3/26
+
+*Jquery :
+-it is javascript library.
+-it makes javascript code easy.
+-it is opensource
+-it is easy to learn.
+
+*there are two ways to use Jquery
+1. by using CDN Link
+2. by Downloading
+
+*How to use Jquery 
+step1: import CDN link or Downloaded link in webpage
+step2: syntax:    $(document).ready(()=>{
+                       all Jquery code 
+                    });
+
+*in Jquery selector play very import role 
+1.element name: p,div,a,img
+2.id selector(#): to select single element
+3.class selector(.): to select multiple element
+4. this selector: it resprent current element,"this" do not work with arrow function in Jquery.
+
+CDN 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+
+

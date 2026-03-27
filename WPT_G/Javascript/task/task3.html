@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .mainID{
+          
+            width: 250px;
+            height: 250px; 
+            border-radius: 50%;
+            border-width: 5px;
+            
+           
+        }
+        .divBig{
+            align-items: center;
+            padding-left: 500px;
+            padding-top: 30px;
+        }
+        .LabelNameClass{
+            padding-left: 80px;
+        }
+        
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="divBig">
+    <!-- create new circle  -->
+    <div class = "mainID" id = "circleID">
+        
+    </div>
+
+    <!-- Add name to image -->
+    <h1 id = "labelName" class="LabelNameClass"> </h1>
+
+    <!-- Add button  -->
+    <button id = "RedID" class="Red" onclick="Red()">
+        Red
+    </button>
+
+    <button id = "GreenID" class="Green" onclick="Green()">
+        Green
+    </button>
+
+    <button id = "BlueID" class="Blue" onclick="Blue()">
+        Blue
+    </button>
+
+    <button id = "BlackID" class="Black" onclick="Black()">
+        Black
+    </button>
+
+    <button id = "kachoriID" class="kachori" onclick="Yellow()">
+        Yellow
+    </button>
+
+    </div>
+    <script>
+
+        
+      
+        function Red() {
+            document.getElementById("circleID").style.backgroundColor = "red";
+        }
+
+        function Green() {
+            document.getElementById("circleID").style.backgroundColor = "green";
+        }
+        function Blue() {
+            document.getElementById("circleID").style.backgroundColor = "blue";
+        }
+        function Black() {
+            document.getElementById("circleID").style.backgroundColor = "black";
+        }
+        function Yellow() {
+            document.getElementById("circleID").style.backgroundColor = "yellow";
+        }
+    
+    </script>
+</body>
+</html>
