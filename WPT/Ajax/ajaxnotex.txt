@@ -1,0 +1,29 @@
+
+28/3/26
+
+*intoriduction of Ajax 
+
+*why to use Ajax
+*where to use Ajax
+
+*when we get data from webserver it comes in json formate 
+
+S/w required 
+*nodejs 
+node -v   // show nodejs version 
+*NPM 
+npm -v 
+
+// instal json-server library
+npm install -g json-server
+npm install json-server
+
+// command to start json-server and database file
+json-server --watch -p 8888 db.json 
+
+*GET request: we can fetch data from server by using get method
+*DELETE request:we can delete data from server.
+*POST request: we can add data to server database.
+*PUT request :we can update data from server
+
+*Task : perform CRUD ooperation for User by using Ajax

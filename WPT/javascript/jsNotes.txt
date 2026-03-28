@@ -76,6 +76,149 @@ Task: create array of object for 10 employee having id,name,post,salary,gender,a
 -display only employee detail whoes age > 55 
 -display only employee detail belong to same department. 
 
+=================================================
+26/3/26
+
+*Date and time in Javascript
+-Date class Object provide date and time in Javascript.
+-date class object return us date and time from browser.
+let dateObj = new Date();
+*how to date get method
+sun=0,mon=1,tue=2.....sat=6
+jan=0,feb=1,mar=2.....dec=11
+
+*how to set date 
+let dateObj = new Date(year,month,date,hours,minutes,second);
+
+*Call back function:
+-calling a function inside another function is called call back function.
+or 
+passing a function as an argument inside another function .
+-when we pass a function name as an argument insid another we do not use parenthesis.
+
+*setTimeOut:it call another function after perticular time interval only once.
+
+*setInterval:it call another function multiple time after perticular time interval.
+
+*Math() : it allows us to perform mathematical operation.
+
+*form validation 
+
+
+Task: write logic and design digital clock 
+TAsk: form form validation for password,email,contact,gender.
+Task: perform validation for password by using onblure event.
+
+*string :
+-it is collection of character.
+-in string every character has index value.
+-in string white space is also consider as string.
+
+*string Method. 
+
+*how to find index of string 
+1.indeOf(searchingString,startIndex):
+-it return index of searching.
+-it start searching of string from left to right
+-if searching string is not found it eturn -1.
+
+2.lastIndex(searchingString,startIndex):
+-it return index of searching.
+-it start searching of string from right to left
+-if searching string is not found it eturn -1.
+
+3.search(searchingString):
+-it return index of searching.
+-it start searching of string from left to right
+-if searching string is not found it eturn -1.
+-is is faster than indexof method.
+
+*find part of string 
+1.slice(startIndex,endIndex):
+-it will search string from left to right when give +ve Index
+-it will search string from rigt to left when give -ve Index.
+
+2.subString(startIndex,endIndex):
+it will search string from left to right when give +ve Index
+
+3.subStr(startIndex,totalnumberofCharacter):
+-it will retun part of string 
+
+*charAt(): it return single charcter index
+
+*2009(ES5)ECMA
+*trim(): it remove white space from both side of string
+let msg="   hello  ";
+msg.trim()
+'hello'
+msg.trimStart()
+'hello  '
+msg.trimEnd()
+'   hello'
+
+*2015(ES6)
+let,const keyword,arrow function,spread(...) operator, oops concept, template leteral,
+
+*Hoisting:
+-it default Javascript behavior which moves variable declaration to top of webpage. 
+-in this we can use variable first and then declare it.
+
+* defference let var and const keyword 
+
+var :
+-it create function scope variable.
+-we can use variable before declaration of it.
+-we can redeclare variable.
+
+*let :
+-it create block scope variable.
+-we can not use variable before declaration of it.
+-it do not allows redeclaration of variable.
+
+*cont :
+-it create block scope variable.
+-when we create constant variable at same time it need initialization.
+-it values will never change while runtime.
+
+====================================================
+27/3/26
+
+*Promise:
+in Javascript Promise is an object which return future result for asynchronous operation.
+syntax:  let myPromis = new Promise((resolve,rejct)=>{})
+
+when we use Promise
+-API call 
+-Database connection
+-timer operation
+-fileupload 
+
+*Asyn and await:
+-it is an moderways to write Promise.
+-it makes asynchronous code look like synchronous.
+-async : it makes function toreturn Promise
+-await : it wait for promis result , it always return inside async function.
+
+*try and catch : to handle exception 
+
+*DOM(Document Object Model): document is global object 
+
+*BOM(browser Object Model): in bom window is parent object 
+
+Propmpt : it allows user to get values through modal popup window.
+
+Task1: using prompt enter single alphabet and identify it wether is consonent or vovels
+Task1:using prompt enter number and find it is even or odd number 
+Task1: using prompt enter user email id, diplay wether is gemail or yahoo or hotmail,outlook 
+
+
+
+
+
+
+
+
+
 
 
 

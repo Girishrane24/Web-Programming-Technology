@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // javascriot object data 
+     let emp = {id:1,name:"Panchashil",post:"TL",salary:95000};
+
+     //JSON.stringify(): convert object type data into json 
+     let jsonData = JSON.stringify(emp);
+     document.write(jsonData,"<br>");
+
+     //JSON.parse(): convert json type data into js object 
+     let jsObjData = JSON.parse(jsonData);
+      document.write(jsObjData.name);
+
+      
+    </script>
+</body>
+</html>

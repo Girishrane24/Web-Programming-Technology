@@ -1,0 +1,46 @@
+{
+  "employee": [
+    {
+      "id": "1",
+      "ename": "panchashil",
+      "epost": "TL",
+      "salary": 95000
+    },
+    {
+      "id": "2",
+      "ename": "Rahul",
+      "epost": "Tester",
+      "salary": 40000
+    },
+    {
+      "id": "3",
+      "ename": "Radha",
+      "epost": "HR",
+      "salary": 80000
+    },
+    {
+      "id": "5f4f",
+      "ename": "Aditya",
+      "epost": "AI Developer",
+      "salary": "980000"
+    },
+    {
+      "ename": "Sagar Ambekar",
+      "epost": "CEO",
+      "salary": "200000",
+      "id": "9e6a"
+    }
+  ],
+  "users": [
+    {
+      "id": "101",
+      "uid": "admin",
+      "upass": "admin@123"
+    },
+    {
+      "id": "102",
+      "uid": "king",
+      "upass": "king@123"
+    }
+  ]
+}
