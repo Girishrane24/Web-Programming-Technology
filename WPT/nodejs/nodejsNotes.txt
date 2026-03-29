@@ -1,0 +1,74 @@
+29/3/26 
+
+*introduction of nodejs 
+*Advantags of nodejs
+*nodejs environmental setup.
+*Nodejs REPL 
+in command propmt node(press enter)
+
+-save REPL code in file command is 
+.save filename.js
+-load code from js file to REPL 
+.load filename.js 
+-come out or exit from REPL environment 
+Ctr+D 
+
+*Module in Nodejs 
+*types of module in node js
+1. core module : module provided by nodejs to us.
+2. local module: module created by developer for their use in project.
+3. thiredpary module : module created and developed by third pary vender, to use it first we have install it then we can use it.
+
+*comman Module: file.js,module.export,required 
+*ES module: file.mjs,export, import,
+
+*core module 
+os : it give information about operating system 
+path: it reurn information about file or directory path. 
+ __dirname:it gives current directory address path
+ __filename:it giv current file path.
+
+*Local Module 
+-module.exports 
+-require()
+
+*what is NPM 
+*npm command 
+
+*Third party Module 
+-to use third party module fist we need to install it and then we can use it.
+
+*validator: it allows to perform string validation
+npm i validator
+*chalk : Terminal string styling done right
+npm i chalk
+
+*Blocking and Non-blocking 
+*call back method in nodejs 
+*what is event 
+*File operation Synchronously and Asynchronously
+*directory operation 
+
+Task: delete newDirTwo Directory having on file in it.
+
+*What is stream 
+* how to read and write tream data 
+
+*Use of HTTM Module 
+*Nodemon : if any change found in server file nodemon will restart our server .
+npm install -g nodemon
+
+how to run file with nodemon 
+nodemon file.js 
+
+*Dotenv : when we work in open environment and want hide of safe our secrete  for this we use Dotenv library.
+npm install dotenv --save
+
+
+*Prompt : A beautiful command-line prompt for node.js
+npm i prompt
+
+   
+
+
+
