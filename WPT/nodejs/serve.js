@@ -1,11 +1,12 @@
 
-require('dotenv').config();
-const http = require('http');
-const fs = require('fs');
-var prompt = require('prompt');
+require('dotenv').config(); // to load enviromnet variable and keep secret data in .env file
+const http = require('http'); // to create server
+const fs = require('fs'); // to perform file hanndilng operation
+var prompt = require('prompt'); // get input from user in command line
 
 
-prompt.start();
+prompt.start(); 
+// to get input from user in command line and start server if user is admin otherwise show wrong credentials
 let host = process.env.HOST;
 let port = process.env.PORT;
 
@@ -13,7 +14,7 @@ let server = http.createServer((req, res) => {
 
     if (req.url === "/" || req.url === "/home") {
         res.writeHead(200, { "content-type": "text/html" });
-        let readStream = fs.createReadStream(__dirname + "/index.html", "utf-8");
+        let readStream = fs.createReadStream(__dirname + "/index.html", "utf-8"); // utf-8 binary data to string data me convert krne ke liye
         readStream.pipe(res);
     }
     if (req.url === "/about") {
